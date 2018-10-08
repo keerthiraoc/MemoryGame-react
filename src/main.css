@@ -1,0 +1,114 @@
+html {
+    font: 10px Arial, Helvetic, sans-serif;
+    margin:0;
+    padding:0;
+  }
+  
+  html {
+    height: 100%;
+  }
+   
+  
+  #gameBoard {
+    background: #fff;
+    margin: 0rem auto 0;
+    padding: 0rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90rem;
+  }
+    
+  
+  .flip {
+    margin: 1rem;
+    width: 18rem;
+    height: 18rem;
+    perspective: 800;
+    position: relative;
+  }
+  
+  .flip .card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+  }
+  
+  .flip .card.flipped {
+    transform: rotateY(-180deg);
+  }
+  
+  .flip .card .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+  }
+  
+  .flip .card .front {
+    transform: rotateY(-180deg);
+    position: absolute;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    margin: 20px 20px 20px 20px;
+    background-size: contain;
+  }
+  
+  .flip .card .back {
+    background-image: url('./images/frontimage.jpg');
+    width: 140px;
+    height: 140px;
+    margin: 20px 20px 20px 20px;
+    background-size: contain;
+  }
+  
+  
+  .flip .burger {
+    background-image: url('./images/burger.png');
+  }
+  
+  .flip .cake {
+    background-image: url('./images/cake.png');
+  }
+  
+  .flip .choclate {
+    background-image: url('./images/choclate.png');
+  }
+  
+  .flip .chocochip {
+    background-image: url('./images/chocochip.png');
+  }
+  
+  .flip .chocoroll {
+    background-image: url('./images/chocoroll.png');
+  }
+  
+  .flip .cupcake {
+    background-image: url('./images/cupcake.png');
+  }
+  
+  .flip .donut {
+    background-image: url('./images/donut.png');
+  }
+  
+  .flip .Icecream {
+    background-image: url('./images/Icecream.png');
+  }
+  .footer{
+    /* text-align: center; */
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px 0px 8px 0px;
+  }
+  .header{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 0px 8px;
+  }
